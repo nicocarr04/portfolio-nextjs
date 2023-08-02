@@ -1,0 +1,45 @@
+footer {
+    text-align: center;
+    margin-top: auto;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(2rem);
+    color:#fff;
+}
+
+.copyright {
+    color: #fff;
+    margin-top: 25px;
+}
+
+.icon-footer {
+    color: #fff;
+    margin: 0.2rem;
+}
+
+.icon-footer img {
+    color: #fff;
+    margin: 0.2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    height: 75px;
+    width: 125px; 
+}
+
+@media (max-width: 1140px) {
+    .copyright {
+        display: none;
+    }
+}
+
+@media (max-width: 880px) {
+    .footer-links {
+        display: none;
+    }
+}
+
