@@ -1,0 +1,190 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  display: inline-flex;
+  margin: 20px;
+  margin: 5rem;
+}
+
+.profile-name-container {
+  text-align: center;
+}
+
+.profile-name-container img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 15px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7),  rgba(255, 255, 255, 0.3));
+}
+
+.profile {
+  margin: 0.2rem;
+  margin-right: 1rem;
+  height: 700px;
+  width: 400px;
+}
+
+.profile-name-container h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  vertical-align: top;
+  color:rgba(255, 255, 255, 0.7)
+}
+
+.profile-name-container h5 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color:rgba(255, 255, 255, 0.7)
+}
+
+.description-container {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: left;
+  margin-left: 10%;
+}
+
+.description-container h1 {
+  margin-top: auto;
+}
+
+.description-container p {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 450px;
+  height: auto;
+}
+
+.current {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 85%;
+}
+
+.skills-container-main {
+  margin-top: 2rem;
+}
+
+.skills-container {
+  width: 100%;
+  color: rgba(22, 22, 22, 0.879);
+  background-color: #f6f6f686;
+  padding: 30px;
+  display: block;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.skillbar {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px 0 0 5px;
+}
+
+.title {
+  background-color:rgba(55, 55, 55, 0.118);
+  padding: 5px;
+  height: 30px;
+  width: 85px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #3e3e3e;
+  border-radius: 5px 0 0 5px;
+}
+
+.percent {
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #3e3e3e;
+  font-weight: 700;
+}
+
+.sexy-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20px;
+  border-radius: 5px 0 0 5px;
+}
+
+.html {
+  background-color: rgb(255, 110, 60);
+  z-index: 9;
+}
+
+.css {
+  background-color: rgb(60, 125, 255);
+  z-index: 9;
+}
+
+.js {
+  background-color: rgb(255, 255, 60);
+  z-index: 9;
+}
+
+.java {
+  background-color: rgb(255, 60, 60);
+  z-index: 9;
+} 
+
+.csharp {
+  background-color: rgb(145, 0, 215);
+  z-index: 9;
+} 
+
+.cpp {
+  background-color: rgb(180, 30, 255);
+  z-index: 9;
+} 
+
+.sql {
+  background-color: rgb(255, 255, 255);
+  z-index: 9;
+} 
+
+.frontend-skills-container {
+  margin-bottom: 10%;
+}
+
+@media (max-width: 880px) {
+  .about-container {
+    display: block;
+    margin: 5%;
+  }
+
+  .profile-name-container {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .description-container {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  .profile {
+    margin: 0.2rem;
+    margin-right: 1rem;
+    height: 350px;
+    width: 200px;
+  }
+}
