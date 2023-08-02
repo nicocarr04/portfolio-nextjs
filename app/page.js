@@ -1,95 +1,65 @@
 import Image from 'next/image'
-import styles from './page.module.css'
+import profilePic from '../public/profile-pic.jpg'
+import './page.css'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="wrapper">
+      <div className="about-container">
+        <div className="profile-name-container">
+          <Image src={profilePic} alt="Profile pic" className='profile'/>
+          <h3>Nicolas Carriere</h3>
+          <h5 className="current">Currently Studying Computer Programming</h5>
+        </div>
+        <div className="description-container">
+          <h1>Let's me introduce myself</h1>
+          <p>
+            Hi, I am Nic and I am French. I also speak English as my second language because I am bilingual. I am starting my first year of university soon and I am also finishing my second year in my college program soon. I am 20 years old and ready to learn in life and achieve my future goals. To be transparent, I am someone who has ADHD but I use it to my advantage to get some ideas for my future projects. I won't call this a weakness, but it is more like a strength.
+          </p>
+          <p>
+            Now, for what we call technology, this is my biggest passion in life. That's what I discovered when I was young and still playing some video games in my free time. But when I discovered that it was possible to make a program that could help you, a game that you could have fun showcasing to others, or just trying something and learning it because while programming, we don't stop learning. Technology evolves day by day and that's what I love about it.
+          </p>
+          <div className='skills-container-main'>
+            <h1>My Skills</h1>
+            <div className="skills-container">
+              <div className="frontend-skills-container">
+              <div className="skillbar">
+                  <div className="sexy-side html"></div>
+                  <span className="title">HTML</span>
+                  <span className="percent">HIGH-INTERMEDIATE</span>
+                </div>
+                <div className="skillbar">
+                  <div className="sexy-side css"></div>
+                  <span className="title">CSS</span>
+                  <span className="percent">INTERMEDIATE</span>
+                </div>
+                <div className="skillbar">
+                  <div className="sexy-side js"></div>
+                  <span className="title">JS</span>
+                  <span className="percent">INTERMEDIATE</span>
+                </div>
+              </div>
+              <div className="backend-skills-container">
+              <div className="skillbar">
+                  <div className="sexy-side csharp"></div>
+                  <span className="title">C#</span>
+                  <span className="percent">HIGH-INTERMEDIATE</span>
+                </div>
+                <div className="skillbar">
+                  <div className="sexy-side java"></div>
+                  <span className="title">Java</span>
+                  <span className="percent">HIGH-INTERMEDIATE</span>
+                </div>
+                <div className="skillbar">
+                  <div className="sexy-side sql"></div>
+                  <span className="title">SQL</span>
+                  <span className="percent">HIGH-INTERMEDIATE</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </div>
+  );
 }
