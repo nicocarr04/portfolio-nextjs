@@ -1,0 +1,73 @@
+.testimonial-container {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 50px;
+}
+
+.temoigneur {
+  margin-bottom: 2rem;
+}
+
+.temoigneur h2 {
+  text-align: left;
+}
+
+.is-invalid {
+  border: 2px red solid;
+}
+
+.invalid-feedback {
+  color: red;
+}
+
+
+.temoigneur p {
+  border: 15px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7),  rgba(255, 255, 255, 0.3));
+  background-color: #f6f6f686;
+  color: black;
+  margin-top: 1rem;
+  padding: 10px;
+}
+
+.comment-testimonies {
+  margin-top: 3rem;
+}
+
+.testimonial-container h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type='submit'] {
+  background-color: #f6f6f6;
+  color: #3e3e3e;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
