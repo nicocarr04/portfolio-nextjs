@@ -10,7 +10,7 @@ Fonctionnalités du site web:
 Comment installer?
 
     Vous devez npm install dans le dossier de base.
-    Puis, lancez avec npm start dans le dossier de base.
+    Puis, lancez avec npm run dev dans le dossier de base.
 
 PS: Il n'y a aucun réel backend dans ce projet.
 
